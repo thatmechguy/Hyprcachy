@@ -41,7 +41,17 @@ sudo pacman -S --needed --noconfirm \
     papirus-icon-theme \
     zen-browser \
     gnome-boxes \
-    helium-browser-bin
+    helium-browser-bin \
+    flatpak \
+    android-tools \
+    gnome-text-editor \
+    gnome-disk-utility \
+    loupe \
+    papers \
+    vlc \
+    neovim \
+    vscodium \
+
 
 # AUR packages
 yay -S --needed --noconfirm \
@@ -49,6 +59,15 @@ yay -S --needed --noconfirm \
     noctalia-greeter-git \
     bibata-cursor-theme-git \
     papirus-folders
+
+flatpak install flathub org.freecad.FreeCAD
+flatpak install flathub com.google.AndroidStudio
+flatpak install flathub com.ultimaker.cura
+flatpak install flathub com.bambulab.BambuStudio
+flatpak install flathub cc.arduino.IDE2
+
+flatpak override --user --env=ELECTRON_OZONE_PLATFORM_HINT=x11 cc.arduino.IDE2
+
 
 echo "Removing old configuration..."
 

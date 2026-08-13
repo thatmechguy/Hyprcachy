@@ -4,7 +4,7 @@ local closeWindowBind = hl.bind(mod .. " + Q", hl.dsp.window.close())
 
 hl.bind(mod .. " + RETURN", hl.dsp.exec_cmd("kitty"))
 hl.bind(mod .. " + E", hl.dsp.exec_cmd("nautilus"))
-hl.bind(mod .. " + B", hl.dsp.exec_cmd("zen-browser"))
+hl.bind(mod .. " + B", hl.dsp.exec_cmd("helium-browser"))
 hl.bind(mod .. " + SHIFT + T", hl.dsp.exec_cmd("kitty -e btop --force-utf"))
 hl.bind(mod .. " +TAB", hl.dsp.focus({ workspace = "previous" }))
 -- hl.bind("ALT + TAB", hl.dsp.window.cycle_next())
@@ -13,7 +13,7 @@ hl.bind(mod .. " + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "
 hl.bind(mod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
 hl.bind(mod .. " + T", hl.dsp.window.float({ action = "toggle" }))
 
-hl.bind(mod .. " + PERIOD", hl.dsp.exec_cmd("flatpak run xyz.riothedev.emojify"))
+-- hl.bind(mod .. " + PERIOD", hl.dsp.exec_cmd("flatpak run xyz.riothedev.emojify"))
 
 -- NOCTALIA v5 BINDS --------------------------------------
 

@@ -61,7 +61,7 @@ hl.window_rule({
 
 hl.window_rule({
 	match = {
-		class = ".*vlc.*|.*blender.*|.*steam_app_.*|.*virt-manager.*|.*qemu.*|affinity|.*krita.*",
+		class = ".*vlc.*|.*blender.*|.*steam_app_.*|.*virt-manager.*|.*qemu.*|affinity|.*krita.*|.*Boxes.*|.*firefox.*",
 	},
 	opaque = true,
 	no_blur = true,
@@ -79,19 +79,57 @@ hl.window_rule({
 hl.layer_rule({
 	name = "noctalia",
 	match = {
-
 		namespace = "noctalia-background-.*|^noctalia-.*",
 	},
-	ignore_alpha = 0.5,
+	ignore_alpha = 0.1,
 	blur = true,
 	blur_popups = true,
 })
 
 hl.window_rule({
 	match = {
-		class = ".*Nautilus.*|Xdg-desktop-portal-gtk",
+		class = ".*Nautilus.*|Xdg-desktop-portal-gtk|xdg-desktop-portal-gtk",
 	},
 	float = true,
 	center = true,
 	size = {850, 600},
+})
+
+hl.window_rule({
+    match = {
+        class = "NexusMods.App",
+        title = ".*Curvy.*|.*FOMOD.*",
+    },
+    float = true,
+    center = true,
+    size = {800, 600}
+})
+
+hl.window_rule({
+    match = {
+        class = "blender",
+        title = "Preferences",
+    },
+    float = true,
+    center = true,
+    size = {900, 700},
+})
+
+hl.window_rule({
+    match = {
+        class = "dev.noctalia.Noctalia",
+    },
+    float = true,
+    center = true,
+    size = {1500, 900}
+})
+
+hl.window_rule({
+    match = {
+        class = "md.Obsidian",
+        title = "Settings - Obsidian Notes - Obsidian 1.13.4|Community plugins - Obsidian Notes - Obsidian 1.13.4",
+    },
+    float = true,
+    center = true,
+    size = {1200, 900}
 })
