@@ -34,7 +34,7 @@
     {
       "type": "command",
       "key": "󰔛 │",
-      "text": "b=$(stat -c %W /); n=$(date +%s); d=$((n-b)); printf \"%dd\" $((d/86400))"
+      "text": "b=$(stat -c %W /); n=$(date +%s); d=$((n - b)); printf \"%dd %dh %dm %ds\" \"$((d/86400))\" \"$(((d%86400)/3600))\" \"$(((d%3600)/60))\" \"$((d%60))\""
     },
 
     {
