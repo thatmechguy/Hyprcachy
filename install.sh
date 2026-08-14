@@ -34,9 +34,9 @@ sudo pacman -S --needed --noconfirm \
     hyprland \
     kitty \
     xdg-desktop-portal-hyprland \
-    blender \
-    obs-studio \
-    kdenlive \
+    adw-gtk-theme \
+    qt6ct \
+    zed \
     btop \
     papirus-icon-theme \
     zen-browser \
@@ -51,6 +51,7 @@ sudo pacman -S --needed --noconfirm \
     vlc \
     neovim \
     vscodium \
+    udiskie
 
 
 # AUR packages
