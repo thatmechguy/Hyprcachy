@@ -58,14 +58,14 @@ sudo pacman -S --needed --noconfirm \
 yay -S --needed --noconfirm \
     noctalia-git \
     noctalia-greeter-git \
-    bibata-cursor-theme-git \
+    bibata-cursor-theme \
     papirus-folders
 
-flatpak install flathub org.freecad.FreeCAD
-flatpak install flathub com.google.AndroidStudio
-flatpak install flathub com.ultimaker.cura
-flatpak install flathub com.bambulab.BambuStudio
-flatpak install flathub cc.arduino.IDE2
+flatpak install -y flathub org.freecad.FreeCAD
+flatpak install -y flathub com.google.AndroidStudio
+flatpak install -y flathub com.ultimaker.cura
+flatpak install -y flathub com.bambulab.BambuStudio
+flatpak install -y flathub cc.arduino.IDE2
 
 flatpak override --user --env=ELECTRON_OZONE_PLATFORM_HINT=x11 cc.arduino.IDE2
 
@@ -81,10 +81,12 @@ rm -rf \
 echo "Creating symlinks..."
 
 mkdir -p ~/.config
+mkdir -p ~/.local/state/noctalia
 
 ln -s ~/Hyprcachy/hypr ~/.config
 ln -s ~/Hyprcachy/kitty ~/.config
 ln -s ~/Hyprcachy/fastfetch ~/.config
 ln -s ~/Hyprcachy/.zshrc ~/
+ln -s ~/Hyprcachy/settings.toml ~/.local/state/noctalia
 
 echo "Installation complete!"
