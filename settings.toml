@@ -1,4 +1,4 @@
-config_version = 12
+config_version = 13
 
 [backdrop]
 enabled = true
@@ -14,7 +14,7 @@ order = [ "Top" ]
         "network",
         "group:g2",
         "bluetooth",
-        "nix-monitor",
+        "widget",
         "tray",
         "notes",
         "clipboard",
@@ -177,21 +177,21 @@ background_opacity = 0.79999998211860657
 [osd]
 background_opacity = 0.79999998211860657
 
-[plugin_settings."nightwatch75/todo"]
-panel_placement = "floating"
+[plugin_settings."gustav0ar/drive-health"]
+system_collector_enabled = true
 
 [plugin_settings."noctalia/notes"]
 panel_open_near_click = true
+panel_placement = "attached"
 panel_position = "auto"
 
 [plugin_settings."noctalia/wallhaven"]
 api_key = ""
 browser_open_near_click = true
-browser_placement = "floating"
 download_dir = "~/Pictures/Wallpapers"
 
 [plugins]
-enabled = [ "noctalia/wallhaven", "noctalia/timer", "nightwatch75/todo", "noctalia/notes", "gustav0ar/drive-health" ]
+enabled = [ "noctalia/wallhaven", "noctalia/timer", "nightwatch75/todo", "noctalia/notes" ]
 
 [shell]
 avatar_path = "/home/thatmechguy/Downloads/0a398a0299f1ea314f8288d160655bba.png"
@@ -208,15 +208,16 @@ screen_time_enabled = true
     sort_by_usage = false
 
     [shell.panel]
+    clipboard_placement = "attached"
     clipboard_position = "auto"
-    control_center_placement = "floating"
+    launcher_placement = "attached"
     open_near_click_clipboard = true
     open_near_click_launcher = true
+    polkit_placement = "attached"
     polkit_position = "auto"
     session_placement = "floating"
     shadow = false
     transparency_mode = "soft"
-    wallpaper_placement = "floating"
 
     [shell.screen_corners]
     size = 15
@@ -249,13 +250,13 @@ wallpaper_scheme = "soft"
     ]
 
 [wallpaper.default]
-path = "/home/chirayu/Pictures/Wallpapers/wallhaven-qrojkr.jpg"
+path = "/home/chirayu/Pictures/Wallpapers/wallhaven-d8kyjj.png"
 
 [wallpaper.last]
-path = "/home/chirayu/Pictures/Wallpapers/wallhaven-qrojkr.jpg"
+path = "/home/chirayu/Pictures/Wallpapers/wallhaven-d8kyjj.png"
 
 [wallpaper.monitors.eDP-1]
-path = "/home/chirayu/Pictures/Wallpapers/wallhaven-qrojkr.jpg"
+path = "/home/chirayu/Pictures/Wallpapers/wallhaven-d8kyjj.png"
 
 [widget.cpu]
 display = "text"
@@ -278,10 +279,6 @@ visualization = "none"
 [widget.network_tx]
 display = "text"
 visualization = "none"
-
-[widget.nix-monitor]
-show_text = false
-type = "avivbintangaringga/nix-monitor:nix-monitor"
 
 [widget.notes]
 type = "noctalia/notes:notes"
@@ -314,6 +311,9 @@ scroll_up = "volume-up 1%"
 
 [widget.wallhaven]
 type = "noctalia/wallhaven:wallhaven"
+
+[widget.widget]
+type = "yuuto/arch-updater:widget"
 
 [widget.workspaces]
 labels_only_when_occupied = true
