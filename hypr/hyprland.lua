@@ -8,6 +8,7 @@ require("layout")
 require("misc")
 require("monitors")
 require("rules")
+require("scrolling")
 
 
 
