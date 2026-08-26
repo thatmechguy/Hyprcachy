@@ -7,7 +7,7 @@ hl.bind(mod .. " + E", hl.dsp.exec_cmd("nautilus"))
 hl.bind(mod .. " + B", hl.dsp.exec_cmd("helium-browser"))
 hl.bind(mod .. " + SHIFT + T", hl.dsp.exec_cmd("kitty -e btop --force-utf"))
 hl.bind(mod .. " +TAB", hl.dsp.focus({ workspace = "previous" }))
--- hl.bind("ALT + TAB", hl.dsp.window.cycle_next())
+hl.bind("ALT + TAB", hl.dsp.window.cycle_next())
 hl.bind(mod .. " + C", hl.dsp.window.center())
 hl.bind(mod .. " + F", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
 hl.bind(mod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
@@ -34,11 +34,11 @@ hl.bind("XF86AudioPrev", hl.dsp.exec_cmd(noc .. " media previous"))
 hl.bind("PRINT", hl.dsp.exec_cmd(noc .. " screenshot-region"))
 hl.bind(mod .. " + PRINT",hl.dsp.exec_cmd(noc .. " screenshot-fullscreen"))
 
-hl.bind("ALT + TAB", hl.dsp.exec_cmd(noc .. " window-switcher"))
+-- hl.bind("ALT + TAB", hl.dsp.exec_cmd(noc .. " window-switcher"))
 -------------------------------------------------
 
-hl.bind(mod .. " + left", hl.dsp.focus({ direction = "left" }))
-hl.bind(mod .. " + right", hl.dsp.focus({ direction = "right" }))
+-- hl.bind(mod .. " + left", hl.dsp.focus({ direction = "left" }))
+-- hl.bind(mod .. " + right", hl.dsp.focus({ direction = "right" }))
 hl.bind(mod .. " + up", hl.dsp.focus({ direction = "up" }))
 hl.bind(mod .. " + down", hl.dsp.focus({ direction = "down" }))
 
